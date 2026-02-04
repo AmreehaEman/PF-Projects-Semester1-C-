@@ -102,17 +102,12 @@ void fileSave(string fileName, string name, int score);
 int find_max(int index, int doneScore[], int idx);
 void sortPlayersDescending(string name[], int doneScore[], int idx);
 
-// arays for automatic firebomb down
+// arays for fire from enemies
 int fireBombDownX[100], fireBombDownY[100], fireBombDownCount = 0;
-// arays for automatic firebomb up
 int fireBombUpX[100], fireBombUpY[100], fireBombUpCount = 0;
-// arrays to detect player fires
 int bulletX[100], bulletY[100], bulletCount = 0;
-// arrays for enemies to produce fires
 int enemyBulletX[100], enemyBulletY[100], enemyBulletCount = 0;
-// array for enemy to fire right
 int bulletRightX[100], bulletRightY[100], bulletCountRight = 0;
-// array for enemy to fire left
 int bulletLeftX[100], bulletLeftY[100], bulletCountLeft = 0;
 
 //----------arrays for boss enemy for fire--------
@@ -128,9 +123,7 @@ int main()
     system("cls");
     hideCursor();
     maze();
-
     string name = menu();
-
     cout << "\a";
     system("cls");
     gotoxy(0, 0);
@@ -258,7 +251,7 @@ int level1()
         }
 
         timer++;
-        Sleep(2);
+        Sleep(3);
     }
     return health;
 }
@@ -372,7 +365,7 @@ void level2()
         }
         moveBulletenemy();
         drawSpikes(55, 25, activeSpikes1);
-        Sleep(2);
+        Sleep(10);
         timer2++;
     }
 }
