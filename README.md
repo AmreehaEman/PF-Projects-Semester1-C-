@@ -26,20 +26,13 @@ Skull Fighter is a procedural C++ program that implements player movement, proje
 
 ### ⚙️ Technical Details
 
-| Component       | Implementation|
-|---|---|
-
-| Player Data     | Variables passed by reference for coordinates, health, and score|
-
-| Enemy Logic     | Arrays and loops for managing movement, erasing, and collision|
-
-| Game Loop       | While-loop with state management for level transitions and input|
-
-| UI/UX           | Console-based ASCII visuals using `<windows.h>` for cursor positioning|
-
-| Persistence     | `<fstream>` integration for saving player names and high scores to a file|
-
-
+Component | Implementation
+---|---
+ Player Data | Variables passed by reference for coordinates, health, and score
+ Enemy Logic | Arrays and loops for managing movement, erasing, and collision
+ Game Loop | While-loop with state management for level transitions and input
+ UI/UX | Console-based ASCII visuals using `<windows.h>` for cursor positioning
+ Persistence | `<fstream>` integration for saving player names and high scores to a file
 
 ### 💡 Future Improvements
 
